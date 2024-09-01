@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    width:100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    font-family: Arial,  sans-serif;
+    background-color: black;
+}
+div{
+    display: block;
+ 
+    unicode-bidi: isolate;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+img{
+    overflow: clip;
+
+
+}
+h1{
+    text-align: center;
+    background-color: aqua;
+}
+.container{
+    width: 820px;
+    height: 820px;
+    display: grid;
+    grid-template-columns: 100px 50px 100px 150px 100px 150px 100px;
+    grid-template-rows: 100px 50px 100px 150px 100px 150px 100px;
+    grid-gap: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-left: 5px;
+  
+    background-color: black;
+    
+    padding: 10px;
+    grid-template-areas: 
+
+    "a b b c d e e"
+    "f g g g h e e"
+    "f g g g i e e"
+    "f j j j i k l"
+    "m j j j n o l"
+    "m j j j n p q"
+    "r j j j n s q";
+
+    animation: identifier 15s ease-in-out infinite alternate;   
+    
+    
+}
+@keyframes identifier {
+    0%{
+        grid-template-columns: 100px 50px 100px 150px 100px 150px 100px;
+        grid-template-rows: 100px 50px 100px 150px 100px 150px 100px;
+    }
+    25%{
+        grid-template-columns: 120px 80px 110px 90px 70px 130px 100px;
+        grid-template-rows: 90px 70px 110px 140px 110px 80px 90px;
+    }
+    50%{
+        grid-template-columns: 140px 60px 120px 80px 90px 100px 110px;
+        grid-template-rows: 100px 80px 100px 130px 90px 110px 90px;
+    }
+    75%{
+        grid-template-columns: 130px 70px 100px 100px 80px 120px 100px;
+        grid-template-rows: 110px 90px 120px 120px 100px 100px 80px;
+    }
+    100%{
+        grid-template-columns: 150px 50px 100px 100px 75px 125px 100px;
+        grid-template-rows: 100px 100px 100px 125px 100px 100px 75px;
+    }
+    
+}
+
+
+.container > :nth-child(1){
+    grid-area: a;
+
+}
+.container > :nth-child(2){
+    grid-area: b;
+
+}
+.container > :nth-child(3){
+    grid-area: c;
+
+}
+
+.container > :nth-child(4){
+    grid-area: d;
+
+}
+
+.container > :nth-child(5){
+    grid-area: e;
+
+}
+
+.container > :nth-child(6){
+    grid-area: f;
+
+}
+
+.container > :nth-child(7){
+    grid-area: g;
+
+}
+
+.container > :nth-child(8){
+    grid-area: h;
+
+}
+
+.container > :nth-child(9){
+    grid-area: i;
+
+}
+
+.container > :nth-child(10){
+    grid-area: j;
+
+}
+
+.container > :nth-child(11){
+    grid-area: k;
+
+}
+
+.container > :nth-child(12){
+    grid-area: l;
+
+}
+
+.container > :nth-child(13){
+    grid-area: m;
+
+}
+
+.container > :nth-child(14){
+    grid-area: n;
+
+}
+
+.container > :nth-child(15){
+    grid-area: o;
+
+}
+
+.container > :nth-child(16){
+    grid-area: p;
+
+}
+
+.container > :nth-child(17){
+    grid-area: q;
+
+}
+
+.container > :nth-child(18){
+    grid-area: r;
+
+}
+
+.container > :nth-child(19){
+    grid-area: s;
+
+}
+
+
+
